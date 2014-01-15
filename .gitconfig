@@ -1,0 +1,20 @@
+
+[core]
+	excludesfile = /opt/boxen/config/git/gitignore
+	editor = nano
+
+[credential]
+	helper = /opt/boxen/bin/boxen-git-credential
+
+[hub]
+	protocol = https
+
+[user]
+	name = Andreas Creten
+	email = andreas@madewithlove.be
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
