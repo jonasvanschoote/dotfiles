@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/bash
 cd "$(dirname "${BASH_SOURCE}")"
 
-git pull origin master
+git pull --quiet origin master
 
 rsync --exclude ".git/" --exclude ".DS_Store" --exclude "install.sh" \
-	  --exclude "README.md" --exclude "LICENSE-MIT.txt" -av --no-perms . ~
+	  --exclude "README.md" --exclude "LICENSE-MIT.txt" -av --no-perms --quiet . ~
 
 if [ -n "$BASH" ] ; then 
 	source ~/.profile
