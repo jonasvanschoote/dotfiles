@@ -4,6 +4,7 @@
 Icon?
 Thumbs.db
 *.tmproj
+.bundle
 
 # PHPStorm
 .idea
