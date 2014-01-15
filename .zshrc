@@ -16,8 +16,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+source $HOME/.profile
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Boxen
-
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
