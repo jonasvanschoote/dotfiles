@@ -14,6 +14,10 @@ plugins=(bower capistrano composer git git-flow jira laravel last-working-dir va
 
 source $ZSH/oh-my-zsh.sh
 
+# To fix undefined method `each' for nil:NilClass
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+
 # User configuration
 
 source $HOME/.profile
